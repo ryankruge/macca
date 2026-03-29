@@ -3,8 +3,8 @@ MACCA is a CLI MAC spoofing tool. This tool operates using the built-in `ip` com
 # Application Usage
 ## Support
 - Linux (✓)
-- Windows (X)
-- macOS (X)
+- Windows (✕)
+- macOS (✕)
 ## Requirements
 - Scapy Library
 - JSON Library
