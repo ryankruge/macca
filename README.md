@@ -1,14 +1,14 @@
 # MACCA (MAC Spoofing Tool)
-MACCA is a simple command-line MAC address spoofing tool. This tool operates using the built-in `ip` command in order to configure the MAC address of a particular network interface. By default, executing this tool will generate a random new MAC address using the **manuf.json** file that contains thousands of different OUI (organizationally unique identifiers) to disguise the device as something that it isn't. The last six bytes are then randomly generated using a built-in function.
+MACCA is a CLI MAC spoofing tool. This tool operates using the built-in `ip` command in order to configure the MAC address of network interfaces. By default, executing this tool will generate a random MAC address using the `manuf.json` file that contains thousands of different *Organisationally Unique Identifiers* (OUIs) to mask the identity of the device. The last six bytes of the address are populated at random using an integrated function.
 # Application Usage
-## Support:
-Currently, this tool is only supported on **Linux** as it uses a method that is only available on **Linux**. Support for **Windows** is planned and will be implemented in future.
-## Requirements:
+## Support
+This tool only supports Linux due to the foundation of the tool being built upon Linux-exclusive command-line tools.
+## Requirements
 - Scapy Library
 - JSON Library
 - RE (Regex) Library
 ```
 python -m pip install ./requirements.txt
 ```
-## Summary:
-If for any reason your MAC address is important and must remain the same due to it being recognised by external / internal systems such as a whitelist on a network, **DO NOT** use this tool unless the prior address has been recorded. This tool can be used to bypass blacklists as I have tested it in such a scenario successfully. Using this tool for malicious / illegal reasons is something I **DO NOT** condone and doing so is at the risk of the user partaking in such activities.
+## Summary
+Please consider that altering your MAC address can affect your ability to connect to systems that feature MAC-filtering. The use of this software should be kept within the bounds of local and federal laws and regulations. I will not accept responsibility for any repercussions incurred by such misuse.
